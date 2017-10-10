@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <%= t.include("partials/_head.html", grunt.data.json) %>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+
+    <main class="contents">
+
+      <h1>Mayoral taste test</h1>
+
+      <p class="chatter">
+        Wondering which Seattle mayor candidate shares your views? Take our quiz! For each question, pick the position you agree with most – without knowing which candidate each position belongs to. Then click “next” for the next question. When you’re done, we’ll tell you which candidate thinks like you.
+
+      <div class="quiz-container">
+
+      </div>
+
+      <div class="results-container">
+        
+      </div>
+
+    </main>
+
+    <script>
+window.policies = <%= JSON.stringify(json.policies) %>;
+    </script>
+
+    <script src="app.js" async></script>
+    <% if (json.project.production) { %>
+    <%= !json.project.embedded ? t.include("partials/_analytics.html") : "" %>
+    <%= t.include("partials/_workHere.html") %>
+    <% } %>
+  </body>
+</html>
