@@ -6,22 +6,28 @@
   </head>
   <body>
 
+    <%= t.include("partials/_nav.html") %>
+
     <main class="contents">
+
+      <div class="mainPhoto"><img src="http://via.placeholder.com/800x500"></a></div>
 
       <h1>Mayoral taste test</h1>
 
       <p class="chatter">
-        Wondering which Seattle mayor candidate shares your views? Take our quiz! For each question, pick the position you agree with most – without knowing which candidate each position belongs to. Then click “next” for the next question. When you’re done, we’ll tell you which candidate thinks like you.
+        Wondering which Seattle mayor candidate shares your views? Take our quiz! For each question, pick the position you agree with most – without knowing which candidate each position belongs to. When you’re done, we’ll tell you which candidate thinks like you.
+
+      <div class="results-container"></div>
+
 
       <div class="quiz-container">
 
       </div>
 
-      <div class="results-container">
-        
-      </div>
 
     </main>
+
+    <%= t.include("partials/_navBottom.html") %>
 
     <script>
 window.policies = <%= JSON.stringify(json.policies) %>;

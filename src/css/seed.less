@@ -1,12 +1,94 @@
 @import "seattletimes";
 
 main.contents {
-  max-width: 600px;
+  max-width: 800px;
   margin: auto;
+  padding: 16px;
+}
+
+.mainPhoto {
+  padding-top: 25px;
+}
+
+h1 {
+  font-size: 70px;
+  text-align: center;
+
+  @media @mobile {
+    font-size: 40px;
+  }
+}
+
+.chatter {
+  font-family: @df-sans;
+  font-size: 23px;
+}
+
+.results-container {
+  font-family: @df-sans;
+  position: sticky;
+  top: 0px;
+  background-color: white;
+  padding: 20px 0 13px 0;
+  border-bottom: 4px solid @df-navy;
+
+  .matchesTitle {
+    // font-weight: bold;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 8px;
+    border-radius: 4px;
+    color: white;
+    background-color: @df-navy;
+    text-align: center;
+  }
+
+  .info {
+    .display-flex();
+    .justify-content(space-between);
+    font-weight: bold;
+    padding-top: 10px;
+
+    div {
+      .flex(0 0 33%);
+      text-transform: uppercase;
+
+      .number {
+        color: @df-orange;
+        font-size: 25px;
+        padding-left: 5px;
+      }
+
+      &.counter {
+        font-weight: normal;
+        font-style: italic;
+        text-align: center;
+        color: @df-dark-gray;
+      }
+
+      &.candidateMoon {
+        text-align: right;
+      }
+    }
+  }
+}
+
+.policy {
+  padding-bottom: 40px;
+
+  h3.question {
+    font-family: @df-sans;
+    line-height: 30px;
+  }
 }
 
 .choices {
   .display-flex();
+  .justify-content(space-between);
+
+  @media @mobile {
+    .flex-wrap(wrap);
+  }
 
   input[type="radio"] {
     opacity: 0;
@@ -14,14 +96,39 @@ main.contents {
     z-index: -9;
 
     & + label {
-      padding: 8px;
+      padding: 12px;
       display: block;
       border-radius: 4px;
+      // border: 1px solid @df-light-gray;
+      background-color: @df-off-white;
       cursor: pointer;
-      .flex(0 0 50%);
+      font-family: @df-sans;
+      .flex(0 0 48%);
+
+      &.chosen {
+        .speaker {
+          display: block;
+        }
+      }
+
+      .speaker {
+        font-weight: bold;
+        text-transform: uppercase;
+        color: @df-orange;
+        display: none;
+      }
+
+      .speech {
+        display: block;
+      }
+
+      @media @mobile {
+        .flex(0 0 100%);
+        margin-bottom: 20px;
+      }
 
       &:hover, &:focus {
-        background: @df-off-white;
+        background: @df-light-gray;
       }
     }
 
