@@ -55,7 +55,7 @@ var onChange = function() {
     <div class="info">
       <div class="candidateDurkan">Durkan <span class="number">${counts.durkan}</span></div>
 
-      <div class="counter">X/X</div>
+      <div class="counter">${values.length}/${policies.length}</div>
 
       <div class="candidateMoon">Moon <span class="number">${counts.moon}</span></div>
     </div>
