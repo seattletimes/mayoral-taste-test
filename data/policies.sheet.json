@@ -35,11 +35,6 @@
     "moon": "No. The county should stop building the new facility, which devotes too much space to detention. It should re-scope the project and return to the voters with a new proposal. And it should prioritize funding for restorative justice and alternatives to detention."
   },
   {
-    "question": "What professional experience do you want the next mayor to have?",
-    "durkan": "Worked as an attorney in private practice on high-profile cases. Appointed by President Barack Obama as U.S. Attorney for Western Washington. Served as in the prosecutorial role from 2009 to 2014 and worked on police reform. Joined a large law firm to help corporations with cyber security. Longtime adviser to former Gov. Christine Gregoire.",
-    "moon": "Worked as an operations manager for small companies, including her family’s manufacturing business. Ran a solo planning and urban design studio from 1998 to 2005, worked on a Pioneer Square neighborhood plan. Cofounded the People’s Waterfront Coalition to advocate for civic space along Seattle’s downtown waterfront."
-  },
-  {
     "question": "What was the right response to child sexual-abuse claims against former Mayor Ed Murray, who resigned in September after a cousin became his fifth accuser?",
     "durkan": "Initially showed caution, telling The Stranger in April, “It’s not my place to comment” and “The judicial process has to play itself out.” First called for Murray to resign in May, after he announced he would no longer run for re-election. Criticized Murray at the time and for using his public office “to demean and even silence victims.” Stuck to that position.",
     "moon": "Accepted Murray’s endorsement in June and declined for months to call for his resignation, citing uncertainty about the claims. In July, after The Seattle Times reported that an Oregon child-welfare investigator had determined in 1984 that Murray had likely abused his foster son, urged Murray to “reflect deeply” on whether to stay in office. Finally called for Murray to step down on the day he announced his resignation."
@@ -67,21 +62,25 @@
   {
     "question": "Do you think rent regulation help Seattle?",
     "durkan": "Maybe",
-    "moon": "Yes"
+    "moon": "Yes",
+    "yesno": "x"
   },
   {
     "question": "Do you think the city should open more authorized homeless encampments?",
     "durkan": "Maybe",
-    "moon": "Yes"
+    "moon": "Yes",
+    "yesno": "x"
   },
   {
     "question": "Do you think the city should create a public broadband network?",
     "durkan": "Maybe",
-    "moon": "Yes"
+    "moon": "Yes",
+    "yesno": "x"
   },
   {
     "question": "Do you think the next mayor should retain Kathleen O’Toole as police chief?",
     "durkan": "Yes",
-    "moon": "Maybe"
+    "moon": "Maybe",
+    "yesno": "x"
   }
 ]

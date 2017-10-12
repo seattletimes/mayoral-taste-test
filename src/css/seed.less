@@ -1,7 +1,7 @@
 @import "seattletimes";
 
 main.contents {
-  max-width: 800px;
+  max-width: 850px;
   margin: auto;
   padding: 16px;
 }
@@ -13,15 +13,24 @@ main.contents {
 h1 {
   font-size: 70px;
   text-align: center;
+  margin-bottom: 0px;
 
   @media @mobile {
     font-size: 40px;
   }
 }
 
-.chatter {
+.deck {
+  font-weight: bold;
   font-family: @df-sans;
   font-size: 23px;
+  margin-top: 8px;
+  margin-bottom: 50px;
+}
+
+
+.chatter {
+  font-family: @df-sans;
 }
 
 .results-container {
@@ -32,26 +41,27 @@ h1 {
   padding: 20px 0 13px 0;
   border-bottom: 4px solid @df-navy;
 
-  .matchesTitle {
-    // font-weight: bold;
-    text-transform: uppercase;
-    font-size: 13px;
-    padding: 8px;
-    border-radius: 4px;
-    color: white;
-    background-color: @df-navy;
-    text-align: center;
-  }
-
   .info {
     .display-flex();
-    .justify-content(space-between);
-    font-weight: bold;
+    // .justify-content(space-between);
     padding-top: 10px;
 
-    div {
-      .flex(0 0 33%);
+    .matchesTitle {
+      font-weight: bold;
       text-transform: uppercase;
+      color: @df-middle-gray;
+      text-align: left;
+      .align-self(flex-end);
+    }
+
+    div {
+      .flex(0 0 25%);
+      text-transform: uppercase;
+
+      .candidates {
+        text-transform: uppercase;
+        font-weight: bold;
+      }
 
       .number {
         color: @df-orange;
@@ -62,23 +72,25 @@ h1 {
       &.counter {
         font-weight: normal;
         font-style: italic;
-        text-align: center;
-        color: @df-dark-gray;
-      }
-
-      &.candidateMoon {
         text-align: right;
+        color: @df-dark-gray;
       }
     }
   }
 }
 
 .policy {
-  padding-bottom: 40px;
+  padding-top: 30px;
+  padding-bottom: 55px;
+  border-bottom: 1px solid @df-light-gray;
 
   h3.question {
     font-family: @df-sans;
     line-height: 30px;
+  }
+
+  &.chosen .speaker {
+    display: block;
   }
 }
 
@@ -105,24 +117,22 @@ h1 {
       font-family: @df-sans;
       .flex(0 0 48%);
 
-      &.chosen {
-
-      }
-
-      .speaker {
-        font-weight: bold;
-        text-transform: uppercase;
-        color: @df-orange;
-        display: none;
-      }
-
-      .speech {
-        display: block;
-      }
-
-      @media @mobile {
+      @media @mobile { // separates choices for mobile
         .flex(0 0 100%);
-        margin-bottom: 20px;
+        margin-bottom: 10px;
+      }
+
+      .display-flex();
+
+
+      .check-container {
+        .flex(0 0 30px);
+        text-align: center;
+
+        &::before {
+          content: "▢";
+          font-size: 16px;
+        }
       }
 
       &:hover, &:focus {
@@ -132,18 +142,44 @@ h1 {
 
     &:checked + label {
       background: @df-light-gray;
-      .speaker {
-        display: block;
-        padding-bottom: 5px;
-      }
 
-      &::before {
+      .check-container::before {
         content: "✔";
-        float: right;
-        margin: 0 0 8px 8px;
         color: @st-dark-green;
-        font-size: 36px;
       }
     }
   }
+
+  .speaker {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: @df-orange;
+    display: none;
+    padding-bottom: 4px;
+  }
+
+  &.chosen .speaker {
+    display: block;
+  }
+}
+
+.checkbox {
+}
+
+.check {
+  color: @st-dark-green;
+  display: none;
+}
+
+
+.button {
+  text-align: center;
+  padding-top: 20px;
+  .submit {
+    height: 40px;
+    text-align: center;
+    background-color: @df-orange;
+    color: white;
+    font-size: 18px;
+  }  
 }

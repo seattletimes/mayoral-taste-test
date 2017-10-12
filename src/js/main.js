@@ -6,6 +6,7 @@ var $ = require("./lib/qsa");
 var m = require("./lib/dom");
 
 var container = $.one(".quiz-container");
+var submitButton = $.one(".submit");
 
 
 var policies = window.policies;
@@ -23,26 +24,26 @@ policies.forEach(function(p, i) {
     var label = m("label", {
       "for": `question-${i}-${c}`
     }, [
-      m("span", { class: "speaker" }, c),
-      m("span", { class: "speech" }, p[c])
+      m("div", { class: "column check-container" }),
+      m("div", { class: "column speech-container" }, [
+        m("div", { class: "speaker" }, c),
+        m("div", { class: "speech" }, p[c])
+      ])
     ]);
     cElements.push(input, label);
     input.addEventListener("change", function() { // when it changes it adds the chosen class
-      label.classList.add("chosen");
+      item.classList.add("chosen");
     });
   });
+  var choices = m("div", { class: "choices"}, cElements);
   var item = m("div", { class: "policy", "data-question": i }, [
     m("h3", { class: "question" }, p.question),
-    m("div", { class: "choices"}, cElements)
+    choices
   ]);
   container.appendChild(item);
 });
 
 var results = $.one(".results-container");
-
-var showSpeaker = function() {
-  console.log(this.candidateName);
-};
 
 var onChange = function() {
   var checked = $("input:checked", container);
@@ -50,18 +51,22 @@ var onChange = function() {
   var counts = { durkan: 0, moon: 0 };
   values.forEach(v => counts[v]++);
   console.log(counts);
-  results.innerHTML = `<span class="matchesTitle">Your matches</span>
+  results.innerHTML = `
 
     <div class="info">
-      <div class="candidateDurkan">Durkan <span class="number">${counts.durkan}</span></div>
-
+      <div class="matchesTitle">Your matches:</div>
+      <div class="candidates">Durkan <span class="number">${counts.durkan}</span>, Moon <span class="number">${counts.moon}</span></div>
+      <div class="spacer"></div>
       <div class="counter">${values.length}/${policies.length}</div>
-
-      <div class="candidateMoon">Moon <span class="number">${counts.moon}</span></div>
     </div>
 
     `;
 }
 
+var onSubmit = function() {
+  console.log("hi");
+}
+
 container.addEventListener("change", onChange);
+submitButton.addEventListener("click", onSubmit);
 onChange();
