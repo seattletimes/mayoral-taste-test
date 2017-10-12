@@ -31,13 +31,28 @@
         <button class="submit">Submit</button class="submit">
       </div>
 
-
       <div class="results-bio">
-        <div class="durkan-bio">
+        <div class="bio-intro">
+          Based on your responses, you most align with ...
         </div>
 
-        <div class="moon-bio">
+      <% for (var k in json.bios) { %>
+      <% var bio = json.bios[k] %>
+        <div class="<%= k %>-bio block">
+          <div class="photo">
+            <img src="http://via.placeholder.com/200x300">
+          </div>
+
+          <div class="name-bio">
+            <div class="name">
+              <h2><%= bio.name %></h2>
+            </div>
+            <div class="bio">
+              <%= bio.bio %>
+            </div>
+          </div>
         </div>
+        <% } %>
       </div>
 
     </main>

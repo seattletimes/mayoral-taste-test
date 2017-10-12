@@ -1,0 +1,26 @@
+<div class="yes-no policy" data-question="<%= data.index %>">
+  <h3 class="question"><%= data.policy.question %></h3>
+  <div class="choices">
+    <% var choices = "Yes No Maybe".split(" "); %>
+    <% choices.forEach(function(c) { %>
+    <%
+      var speaker = "";
+      if (data.policy.durkan == c) speaker = "durkan";
+      if (data.policy.moon == c) speaker = "moon";
+    %>
+    <input
+      type="radio"
+      name="question-<%= data.index %>"
+      id="question-<%= data.index %>-<%= c %>"
+      value="<%= speaker %>"
+    >
+    <label for="question-<%= data.index %>-<%= c %>">
+      <div class="check-container"></div>
+      <div class="speech-container">
+        <div class="speaker"><%= speaker %></div>
+        <div class="speech"><%= c %></div>
+      </div>
+    </label>
+    <% }); %>
+  </div>
+</div>

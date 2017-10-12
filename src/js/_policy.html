@@ -1,0 +1,20 @@
+<div class="policy" data-question="<%= data.index %>">
+  <h3 class="question"><%= data.policy.question %></h3>
+  <div class="choices">
+    <% data.candidates.forEach(function(c) { %>
+    <input
+      type="radio"
+      name="question-<%= data.index %>"
+      id="question-<%= data.index %>-<%= c %>"
+      value="<%= c %>"
+    >
+    <label for="question-<%= data.index %>-<%= c %>">
+      <div class="check-container"></div>
+      <div class="speech-container">
+        <div class="speaker"><%= c %></div>
+        <div class="speech"><%= data.policy[c] %></div>
+      </div>
+    </label>
+    <% }); %>
+  </div>
+</div>

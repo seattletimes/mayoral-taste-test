@@ -4,6 +4,7 @@ main.contents {
   max-width: 850px;
   margin: auto;
   padding: 16px;
+  padding-bottom: 40px;
 }
 
 .mainPhoto {
@@ -57,10 +58,11 @@ h1 {
     div {
       .flex(0 0 25%);
       text-transform: uppercase;
+      font-weight: bold;
 
       .candidates {
         text-transform: uppercase;
-        font-weight: bold;
+        // font-weight: bold;
       }
 
       .number {
@@ -116,6 +118,10 @@ h1 {
       cursor: pointer;
       font-family: @df-sans;
       .flex(0 0 48%);
+
+      .yes-no & {
+        .flex(0 0 33%);
+      }
 
       @media @mobile { // separates choices for mobile
         .flex(0 0 100%);
@@ -182,4 +188,46 @@ h1 {
     color: white;
     font-size: 18px;
   }  
+}
+
+.results-bio {
+  padding-top: 40px;
+  font-family: @df-sans;
+  display: none;
+
+  .bio-intro {
+    font-weight: bold;
+    font-size: 20px;
+    padding-bottom: 20px;
+  }
+
+  .block {
+    .display-flex();
+    .justify-content(space-between);
+    display: none;
+
+
+    @media @mobile {
+      text-align: center;
+      .flex-wrap(wrap);
+    }
+
+    .photo {
+      .flex(0 0 30%);
+
+      @media @mobile {
+        .flex(0 0 100%);
+      }
+    }
+
+    .name-bio {
+      font-family: @df-sans;
+      .flex(0 0 70%);
+
+      @media @mobile {
+        .flex(0 0 100%);
+        padding-bottom: 30px;
+      }
+    }
+  }
 }

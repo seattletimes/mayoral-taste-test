@@ -1,10 +1,10 @@
-[
-  {
+{
+  "durkan": {
     "name": "Jenny Durkan",
     "bio": "Worked as an attorney in private practice on high-profile cases. Appointed by President Barack Obama as U.S. Attorney for Western Washington. Served as in the prosecutorial role from 2009 to 2014 and worked on police reform. Joined a large law firm to help corporations with cyber security. Longtime adviser to former Gov. Christine Gregoire."
   },
-  {
+  "moon": {
     "name": "Cary Moon",
     "bio": "Worked as an operations manager for small companies, including her family’s manufacturing business. Ran a solo planning and urban design studio from 1998 to 2005, worked on a Pioneer Square neighborhood plan. Cofounded the People’s Waterfront Coalition to advocate for civic space along Seattle’s downtown waterfront."
   }
-]
+}
