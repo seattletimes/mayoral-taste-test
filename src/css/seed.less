@@ -52,17 +52,21 @@ h1 {
       text-transform: uppercase;
       color: @df-middle-gray;
       text-align: left;
-      .align-self(flex-end);
+
+      @media @mobile {
+        
+      }
     }
 
     div {
-      .flex(0 0 25%);
+      
       text-transform: uppercase;
       font-weight: bold;
 
       .candidates {
         text-transform: uppercase;
         // font-weight: bold;
+        .flex(0 0 70%);
       }
 
       .number {
@@ -76,6 +80,7 @@ h1 {
         font-style: italic;
         text-align: right;
         color: @df-dark-gray;
+        .flex(0 0 30%);
       }
     }
   }
@@ -193,9 +198,14 @@ h1 {
 .results-bio {
   padding-top: 40px;
   font-family: @df-sans;
-  display: none;
 
   .bio-intro {
+    font-weight: bold;
+    font-size: 20px;
+    padding-bottom: 20px;
+  }
+
+  .bio-tie {
     font-weight: bold;
     font-size: 20px;
     padding-bottom: 20px;
@@ -204,7 +214,10 @@ h1 {
   .block {
     .display-flex();
     .justify-content(space-between);
-    display: none;
+
+    &.hidden {
+      display: none;
+    }
 
 
     @media @mobile {
@@ -230,4 +243,8 @@ h1 {
       }
     }
   }
+}
+
+.hidden {
+  display: none;
 }

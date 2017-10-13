@@ -32,13 +32,17 @@
       </div>
 
       <div class="results-bio">
-        <div class="bio-intro">
+        <div class="bio-intro hidden">
           Based on your responses, you most align with ...
+        </div>
+
+        <div class="bio-tie hidden">
+          You've tied. Here's a little bit about each candidate.
         </div>
 
       <% for (var k in json.bios) { %>
       <% var bio = json.bios[k] %>
-        <div class="<%= k %>-bio block">
+        <div class="<%= k %>-bio block hidden">
           <div class="photo">
             <img src="http://via.placeholder.com/200x300">
           </div>
