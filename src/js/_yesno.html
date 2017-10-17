@@ -13,11 +13,12 @@
       name="question-<%= data.index %>"
       id="question-<%= data.index %>-<%= c %>"
       value="<%= speaker %>"
+      tabindex="-1"
     >
-    <label for="question-<%= data.index %>-<%= c %>">
+    <label for="question-<%= data.index %>-<%= c %>" tabindex="0">
       <div class="check-container"></div>
       <div class="speech-container">
-        <div class="speaker"><%= speaker %></div>
+        <div class="speaker <%= speaker %>"><%= speaker %></div>
         <div class="speech"><%= c %></div>
       </div>
     </label>

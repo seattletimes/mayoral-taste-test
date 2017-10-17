@@ -1,5 +1,5 @@
 require("./lib/social");
-// require("./lib/ads");
+require("./lib/ads");
 // var track = require("./lib/tracking");
 
 var $ = require("./lib/qsa");
@@ -52,7 +52,7 @@ var onChange = function(e) {
   results.innerHTML = `
 
     <div class="info">
-      <div class="candidates"><span class="matchesTitle">Your matches:</span> Durkan <span class="number">${counts.durkan}</span>, Moon <span class="number">${counts.moon}</span></div>
+      <div class="candidates"><span class="matchesTitle">Your matches:</span> Durkan <span class="durkan number">${counts.durkan}</span>, Moon <span class="moon number">${counts.moon}</span></div>
       <div class="counter">${counts.total}/${policies.length}</div>
     </div>
 
@@ -87,6 +87,17 @@ $(".button").forEach(el => el.addEventListener("click", function(e) {
   e.preventDefault();
   animate(".submit", 1000);
 }));
+
+container.addEventListener("keydown", function(e) {
+  if (e.keyCode == 13 && e.target.tagName == "LABEL") {
+    var id = e.target.getAttribute("for");
+    var input = $.one("#" + id);
+    input.checked = true;
+    var changeEvent = new Event("change", { bubbles: true });
+    input.dispatchEvent(changeEvent);
+    // onChange({ target: input })
+  }
+});
 
 container.addEventListener("change", onChange);
 submitButton.addEventListener("click", onSubmit);

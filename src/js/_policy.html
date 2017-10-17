@@ -7,11 +7,12 @@
       name="question-<%= data.index %>"
       id="question-<%= data.index %>-<%= c %>"
       value="<%= c %>"
+      tabindex="-1"
     >
-    <label for="question-<%= data.index %>-<%= c %>">
+    <label for="question-<%= data.index %>-<%= c %>" tabindex="0">
       <div class="check-container"></div>
       <div class="speech-container">
-        <div class="speaker"><%= c %></div>
+        <div class="speaker <%= c %>"><%= c %></div>
         <div class="speech"><%= data.policy[c] %></div>
       </div>
     </label>

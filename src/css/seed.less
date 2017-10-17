@@ -1,6 +1,9 @@
 @import "seattletimes";
 @import "videos";
 
+@green: #5ea346;
+@blue: #167fc1;
+
 @headline: 'Alfa Slab One';
 
 
@@ -64,6 +67,8 @@ h1 {
   background-color: white;
   padding: 20px 0 13px 0;
   border-bottom: 4px solid @df-navy;
+  z-index: 999;
+  transform: translateZ(0);
 
   .info {
     .display-flex();
@@ -96,6 +101,14 @@ h1 {
         color: @df-orange;
         font-size: 25px;
         padding-left: 5px;
+
+        &.durkan {
+          color: @green;
+        }
+
+        &.moon {
+          color: @blue;
+        }
       }
 
       &.counter {
@@ -193,14 +206,26 @@ h1 {
         color: @st-dark-green;
       }
     }
+
+    &:focus + label {
+      background: @df-light-gray;
+    }
   }
 
   .speaker {
     font-weight: bold;
     text-transform: uppercase;
-    color: @df-orange;
+    // color: @df-orange;
     display: none;
     padding-bottom: 4px;
+
+    &.durkan {
+      color: @green;
+    }
+
+    &.moon {
+      color: @blue;
+    }
   }
 
   &.chosen .speaker {
@@ -221,9 +246,12 @@ h1 {
   text-align: center;
   padding-top: 20px;
   .submit {
+    border: 1px solid @df-navy;
+    border-radius: 4px;
+    padding: 10px;
     height: 40px;
     text-align: center;
-    background-color: @df-orange;
+    background-color: @df-navy;
     color: white;
     font-size: 18px;
   }  
@@ -248,7 +276,8 @@ h1 {
   .block {
     .display-flex();
     .justify-content(space-between);
-    padding-bottom: 20px;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
     border-bottom: 1px solid @df-light-gray;
     padding-top: 30px;
     .flex-wrap(wrap);
@@ -259,6 +288,7 @@ h1 {
 
 
     @media @mobile {
+      margin-bottom: 10px;
       text-align: center;
       .flex-wrap(wrap);
     }
@@ -266,6 +296,10 @@ h1 {
     .video {
       padding-top: 30px;
       .flex(0 0 100%);
+
+      @media @mobile {
+        padding-top: 10px;
+      }
     }
 
     .candidateButton {
@@ -306,7 +340,7 @@ h1 {
 }
 
 .dont-miss {
-  padding-bottom: 100px;
+  padding-bottom: 40px;
 }
 
 .bio-link {
@@ -320,5 +354,20 @@ h1 {
       color: @df-navy;
       text-decoration: underline;
     }
+  }
+}
+
+.credits {
+  font-family: @df-sans;
+
+  @media @mobile {
+    padding-top: 20px;
+    font-size: 18px;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
   }
 }

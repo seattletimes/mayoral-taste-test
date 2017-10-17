@@ -9,6 +9,8 @@
 
     <%= t.include("partials/_nav.html") %>
 
+    <%= t.include("partials/_ad.html", { type: "banner" }) %>
+
     <main class="contents">
 
       <div class="mainPhoto"><img src="./assets/banner.jpg"></a></div>
@@ -76,9 +78,24 @@
         <% } %>
       </div>
 
+    <div class="credits">
+      Quiz: Daniel Beekman and Jim Brunner &bull; Editing: Beth Kaiman and Laura Gordon &bull; Project producer: Tyler Sipe &bull; Design: Frank Mina &bull; Illustrations: Gabriel Campanario &bull; Development: Vanessa Mart&iacute;nez and Thomas Wilburn
+
+<!--       <ul>
+        <li>Quiz: Daniel Beekman and Jim Brunner</li>
+        <li>Illustrations: Gabriel Campanario</li>
+        <li>Editing: Beth Kaiman and Laura Gordon</li>
+        <li>Project producer: Tyler Sipe</li>
+        <li>Design: Frank Mina</li>
+        <li>Development: Vanessa Mart&iacute;nez and Thomas Wilburn</li>
+      </ul> -->
+    </div>
+
     </main>
 
     <%= t.include("partials/_dontMiss.html") %>
+
+    <%= t.include("partials/_ad.html", { type: "banner" }) %>
 
     <%= t.include("partials/_navBottom.html") %>
 
