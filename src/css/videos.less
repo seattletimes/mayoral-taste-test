@@ -1,0 +1,33 @@
+.video-container {
+  position: relative;
+  width: 99%;
+  margin: auto;
+  clear: both;
+
+  @media @mobile {
+    width: 100%;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    padding-bottom: percentage(9 /16);
+  }
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+}
+
+.video-caption {
+  // max-width: 600px;
+  width: 100%;
+  margin: 16px auto 0;
+  font-size: 14px;
+  font-style: italic;
+}

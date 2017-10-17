@@ -1,4 +1,8 @@
 @import "seattletimes";
+@import "videos";
+
+@headline: 'Alfa Slab One';
+
 
 main.contents {
   max-width: 850px;
@@ -12,26 +16,45 @@ main.contents {
 }
 
 h1 {
+  font-family: @headline;
+  letter-spacing: 1px;
+  font-weight: normal;
+  color: @df-navy;
   font-size: 70px;
   text-align: center;
   margin-bottom: 0px;
 
-  @media @mobile {
-    font-size: 40px;
+  @media @tablet {
+    font-size: 50px;
   }
+
+  @media @mobile {
+    font-size: 38px;
+  }
+
 }
 
 .deck {
+  text-align: center;
   font-weight: bold;
   font-family: @df-sans;
   font-size: 23px;
-  margin-top: 8px;
+  margin-top: 15px;
   margin-bottom: 50px;
+
+  @media @mobile {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
 }
 
 
 .chatter {
   font-family: @df-sans;
+
+  @media @mobile {
+    font-size: 18px;
+  }
 }
 
 .results-container {
@@ -54,7 +77,7 @@ h1 {
       text-align: left;
 
       @media @mobile {
-        
+        display: block;
       }
     }
 
@@ -81,6 +104,7 @@ h1 {
         text-align: right;
         color: @df-dark-gray;
         .flex(0 0 30%);
+        margin-left: auto;
       }
     }
   }
@@ -91,9 +115,18 @@ h1 {
   padding-bottom: 55px;
   border-bottom: 1px solid @df-light-gray;
 
+  @media @mobile {
+    padding-bottom: 30px;
+    padding-top: 20px;
+  }
+
   h3.question {
     font-family: @df-sans;
     line-height: 30px;
+
+    @media @mobile {
+      font-size: 20px;
+    }
   }
 
   &.chosen .speaker {
@@ -107,6 +140,7 @@ h1 {
 
   @media @mobile {
     .flex-wrap(wrap);
+    font-size: 18px;
   }
 
   input[type="radio"] {
@@ -214,6 +248,10 @@ h1 {
   .block {
     .display-flex();
     .justify-content(space-between);
+    padding-bottom: 20px;
+    border-bottom: 1px solid @df-light-gray;
+    padding-top: 30px;
+    .flex-wrap(wrap);
 
     &.hidden {
       display: none;
@@ -225,26 +263,62 @@ h1 {
       .flex-wrap(wrap);
     }
 
-    .photo {
-      .flex(0 0 30%);
+    .video {
+      padding-top: 30px;
+      .flex(0 0 100%);
+    }
+
+    .candidateButton {
+      .flex(0 0 40%);
 
       @media @mobile {
         .flex(0 0 100%);
+
+        img {
+          width: 70%;
+        }
       }
     }
 
     .name-bio {
       font-family: @df-sans;
-      .flex(0 0 70%);
+      .flex(0 0 55%);
 
       @media @mobile {
         .flex(0 0 100%);
         padding-bottom: 30px;
       }
+
+      .name {
+        .align-self(flex-start);
+        font-size: 20px;
+      }
+    }
+
+    .bio {
+      font-size: 18px;
     }
   }
 }
 
 .hidden {
   display: none;
+}
+
+.dont-miss {
+  padding-bottom: 100px;
+}
+
+.bio-link {
+  padding-top: 10px;
+
+  a {
+    color: @df-orange;
+    font-weight: bold;
+
+    &:hover {
+      color: @df-navy;
+      text-decoration: underline;
+    }
+  }
 }

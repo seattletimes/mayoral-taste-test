@@ -11,6 +11,7 @@ var ynTemplate = dot.compile(require("./_yesno.html"));
 
 var container = $.one(".quiz-container");
 var submitButton = $.one(".submit");
+var animate = require("./lib/animateScroll");
 
 var resultsBio = $.one(".bio-intro");
 var tiedBio = $.one(".bio-tie");
@@ -21,7 +22,7 @@ var policies = window.policies;
 
 var html = "";
 policies.forEach(function(policy, index) {
-  if (policy.yesno) {
+  if (policy.yesno && policy.yesno.trim()) {
     html += ynTemplate({ policy, index });
   } else {
     var candidates = Math.random() > .5 ? ["durkan", "moon"] : ["moon", "durkan"];
@@ -81,6 +82,11 @@ var onSubmit = function() {
     moonBio.classList.remove("hidden");
   }
 }
+
+$(".button").forEach(el => el.addEventListener("click", function(e) {
+  e.preventDefault();
+  animate(".submit", 1000);
+}));
 
 container.addEventListener("change", onChange);
 submitButton.addEventListener("click", onSubmit);

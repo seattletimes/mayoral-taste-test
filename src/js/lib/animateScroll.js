@@ -12,7 +12,7 @@ module.exports = function(element, duration = 500, done = noop) {
   var start = document.body.scrollTop || document.documentElement.scrollTop || 0;
   var bounds = element.getBoundingClientRect();
   var now = Date.now();
-  var finish = start + bounds.top - 10;
+  var finish = start + bounds.top - 50; // changed this number from 10 to 50 to give it more space on mobile
   var distance = finish - start;
   if (Math.abs(distance) < 10) return;
 

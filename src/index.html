@@ -3,6 +3,7 @@
   <head>
     <%= t.include("partials/_head.html", grunt.data.json) %>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One" rel="stylesheet">
   </head>
   <body>
 
@@ -10,11 +11,11 @@
 
     <main class="contents">
 
-      <div class="mainPhoto"><img src="http://via.placeholder.com/850x300"></a></div>
+      <div class="mainPhoto"><img src="./assets/banner.jpg"></a></div>
 
-      <h1>Mayoral taste test</h1>
+      <h1>Seattle mayoral matchmaker</h1>
       <p class="deck">
-         Wondering which Seattle mayor candidate shares your views? Take our quiz!
+         Wondering which candidate shares your views? Take our quiz!
       </p>
 
       <p class="chatter">
@@ -43,9 +44,14 @@
       <% for (var k in json.bios) { %>
       <% var bio = json.bios[k] %>
         <div class="<%= k %>-bio block hidden">
-          <div class="photo">
+<!--           <div class="photo">
             <img src="http://via.placeholder.com/200x300">
           </div>
+ -->
+        <div class="candidateButton">
+          <img src="./assets/<%= k %>button.jpg">
+        </div>
+
 
           <div class="name-bio">
             <div class="name">
@@ -54,12 +60,25 @@
             <div class="bio">
               <%= bio.bio %>
             </div>
+
           </div>
+
+        <div class="video">
+         <div class="video-container">
+          <iframe src="//players.brightcove.net/1509317113/V1eCvUwO2g_default/index.html?videoId=<%= bio.video %>" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>
+        </div>
+        <div class="video-caption">
+          We asked leading mayoral candidates to explain &mdash; in less than a minute &mdash; how they are a "typical Seattleite" and how they are "atypical." (Lauren Frohne / The Seattle Times)
+        </div>
+      </div>
+
         </div>
         <% } %>
       </div>
 
     </main>
+
+    <%= t.include("partials/_dontMiss.html") %>
 
     <%= t.include("partials/_navBottom.html") %>
 
