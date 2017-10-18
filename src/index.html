@@ -34,25 +34,40 @@
         <button class="submit">Submit</button class="submit">
       </div>
 
-      <div class="results-bio">
-        <div class="bio-intro hidden">
-          Based on your responses, you most align with ...
-        </div>
-
-        <div class="bio-tie hidden">
-          You've tied. Here's a little bit about each candidate.
-        </div>
-
       <% for (var k in json.bios) { %>
       <% var bio = json.bios[k] %>
+
+        <div class="results-bio">
+          <div class="bio-intro <%= k %> hidden">
+            Based on your responses, you most align with ...
+            <span class="bigName <%= k %>"><%= bio.name %></span>
+          </div>
+
+          <div class="bio-tie hidden">
+            <span class="tied">You've tied.</span>
+            Here's a little bit about each candidate.
+          </div>
+
+
+
         <div class="<%= k %>-bio block hidden">
 <!--           <div class="photo">
             <img src="http://via.placeholder.com/200x300">
           </div>
  -->
-        <div class="candidateButton">
+<!--         <div class="candidateButton">
           <img src="./assets/<%= k %>button.jpg">
+        </div> -->
+
+        <div class="video">
+           <div class="video-container">
+            <iframe src="//players.brightcove.net/1509317113/V1eCvUwO2g_default/index.html?videoId=<%= bio.video %>" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>
+          </div>
+          <div class="video-caption">
+            We asked leading mayoral candidates to explain &mdash; in less than a minute &mdash; how they are a "typical Seattleite" and how they are "atypical." (Lauren Frohne / The Seattle Times)
+          </div>
         </div>
+
 
 
           <div class="name-bio">
@@ -64,15 +79,6 @@
             </div>
 
           </div>
-
-        <div class="video">
-         <div class="video-container">
-          <iframe src="//players.brightcove.net/1509317113/V1eCvUwO2g_default/index.html?videoId=<%= bio.video %>" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>
-        </div>
-        <div class="video-caption">
-          We asked leading mayoral candidates to explain &mdash; in less than a minute &mdash; how they are a "typical Seattleite" and how they are "atypical." (Lauren Frohne / The Seattle Times)
-        </div>
-      </div>
 
         </div>
         <% } %>

@@ -262,15 +262,50 @@ h1 {
   font-family: @df-sans;
 
   .bio-intro {
+    text-align: center;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 25px;
     padding-bottom: 20px;
+
+    @media @mobile {
+      font-size: 22px;
+    }
+
+    .bigName {
+      display: block;
+      font-size: 50px;
+      font-family: @headline;
+      font-weight: normal;
+      letter-spacing: 1px;
+
+      &.durkan {
+        color: @green;
+      }
+
+      &.moon {
+        color: @blue;
+      }
+
+      @media @mobile {
+        font-size: 40px;
+      }      
+    }
   }
 
   .bio-tie {
+    text-align: center;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 25px;
     padding-bottom: 20px;
+
+    .tied {
+      display: block;
+      font-size: 50px;
+      font-family: @headline;
+      font-weight: normal;
+      letter-spacing: 1px;
+      color: @df-navy;
+    }
   }
 
   .block {
@@ -279,7 +314,7 @@ h1 {
     padding-bottom: 40px;
     margin-bottom: 40px;
     border-bottom: 1px solid @df-light-gray;
-    padding-top: 30px;
+    padding-top: 20px;
     .flex-wrap(wrap);
 
     &.hidden {
@@ -295,32 +330,29 @@ h1 {
 
     .video {
       padding-top: 30px;
-      .flex(0 0 100%);
+      .flex(0 0 60%);
 
       @media @mobile {
         padding-top: 10px;
-      }
-    }
-
-    .candidateButton {
-      .flex(0 0 40%);
-
-      @media @mobile {
         .flex(0 0 100%);
-
-        img {
-          width: 70%;
-        }
       }
     }
 
     .name-bio {
       font-family: @df-sans;
-      .flex(0 0 55%);
+      .flex(0 0 35%);
 
       @media @mobile {
         .flex(0 0 100%);
         padding-bottom: 30px;
+      }
+
+      .candidateButton {
+        padding-right: 8px;
+        float: left;
+        img {
+          width: 40px;
+        }
       }
 
       .name {

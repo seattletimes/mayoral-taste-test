@@ -13,7 +13,8 @@ var container = $.one(".quiz-container");
 var submitButton = $.one(".submit");
 var animate = require("./lib/animateScroll");
 
-var resultsBio = $.one(".bio-intro");
+var resultsBioDurkan = $.one(".bio-intro.durkan");
+var resultsBioMoon = $.one(".bio-intro.moon");
 var tiedBio = $.one(".bio-tie");
 var durkanBio = $.one(".durkan-bio");
 var moonBio = $.one(".moon-bio");
@@ -63,7 +64,8 @@ var onSubmit = function() {
   var score = getScore();
 
   // resets hidden classes
-  resultsBio.classList.add("hidden");
+  resultsBioDurkan.classList.add("hidden");
+  resultsBioMoon.classList.add("hidden");
   tiedBio.classList.add("hidden");
   durkanBio.classList.add("hidden");
   moonBio.classList.add("hidden");
@@ -71,10 +73,10 @@ var onSubmit = function() {
 
   // removes hidden classes from results
   if (score.durkan > score.moon) {
-    resultsBio.classList.remove("hidden");
+    resultsBioDurkan.classList.remove("hidden");
     durkanBio.classList.remove("hidden");
   } else if (score.moon > score.durkan) {
-    resultsBio.classList.remove("hidden");
+    resultsBioMoon.classList.remove("hidden");
     moonBio.classList.remove("hidden");
   } else { // a tie
     tiedBio.classList.remove("hidden");
