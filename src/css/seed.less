@@ -188,8 +188,9 @@ h1 {
         text-align: center;
 
         &::before {
-          content: "▢";
-          font-size: 16px;
+          content: url(assets/empty.svg);
+          padding-right: 8px;
+
         }
       }
 
@@ -202,8 +203,8 @@ h1 {
       background: @df-light-gray;
 
       .check-container::before {
-        content: "✔";
-        color: @st-dark-green;
+        content: url(assets/check.svg);
+        padding-right: 8px;
       }
     }
 
@@ -329,7 +330,6 @@ h1 {
     }
 
     .video {
-      padding-top: 30px;
       .flex(0 0 60%);
 
       @media @mobile {
@@ -347,17 +347,17 @@ h1 {
         padding-bottom: 30px;
       }
 
-      .candidateButton {
-        padding-right: 8px;
-        float: left;
-        img {
-          width: 40px;
-        }
-      }
-
-      .name {
+      .name-durkan .name-moon{
         .align-self(flex-start);
         font-size: 20px;
+      }
+
+      h2 {
+        margin-top: 0px;
+
+        @media @mobile {
+          margin-top: 29px;
+        }
       }
     }
 
@@ -402,4 +402,8 @@ h1 {
     padding: 0px;
     margin: 0px;
   }
+}
+
+.thin-div .center { // changes width of Don't Miss so that More Coverage fits
+  width: 150px;
 }

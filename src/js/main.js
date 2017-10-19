@@ -18,6 +18,8 @@ var resultsBioMoon = $.one(".bio-intro.moon");
 var tiedBio = $.one(".bio-tie");
 var durkanBio = $.one(".durkan-bio");
 var moonBio = $.one(".moon-bio");
+var durkanName = $.one(".name-durkan");
+var moonName = $.one(".name-moon");
 
 var policies = window.policies;
 
@@ -69,19 +71,25 @@ var onSubmit = function() {
   tiedBio.classList.add("hidden");
   durkanBio.classList.add("hidden");
   moonBio.classList.add("hidden");
+  durkanName.classList.remove("hidden");
+  moonName.classList.remove("hidden");
 
 
   // removes hidden classes from results
   if (score.durkan > score.moon) {
     resultsBioDurkan.classList.remove("hidden");
     durkanBio.classList.remove("hidden");
+    durkanName.classList.add("hidden");
   } else if (score.moon > score.durkan) {
     resultsBioMoon.classList.remove("hidden");
     moonBio.classList.remove("hidden");
+    moonName.classList.add("hidden");
   } else { // a tie
     tiedBio.classList.remove("hidden");
     durkanBio.classList.remove("hidden");
     moonBio.classList.remove("hidden");
+    durkanName.classList.remove("hidden");
+    moonName.classList.remove("hidden");
   }
 }
 

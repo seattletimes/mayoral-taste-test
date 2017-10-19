@@ -1,30 +1,30 @@
 [
   {
     "order": 1,
-    "category": "Local Politics",
+    "category": "Transportation",
     "title": "Seattle mayoral candidates both say the future holds fewer cars. Here’s how they would ease the crunch",
     "link": "https://www.seattletimes.com/seattle-news/transportation/seattle-mayoral-candidates-both-say-the-future-holds-fewer-cars-heres-how-they-would-ease-the-crunch/",
     "image": "teaser01.jpg"
   },
   {
     "order": 2,
-    "category": "Local Politics",
+    "category": "Candidate profiles",
     "title": "Who has what it takes to be mayor? A hard look at the careers of Durkan, Moon as they vie to lead Seattle",
     "link": "https://www.seattletimes.com/seattle-news/politics/who-has-what-it-takes-to-be-mayor-jenny-durkan-and-cary-moons-careers-shape-their-vision-for-seattles-future/",
     "image": "teaser02.jpg"
   },
   {
     "order": 3,
-    "category": "Local Politics",
+    "category": "Debate",
     "title": "Candidates square off in a Seattle mayoral debate overshadowed by Ed Murray’s resignation",
     "link": "https://www.seattletimes.com/seattle-news/politics/jenny-durkan-cary-moon-square-off-in-seattle-mayoral-debate-overshadowed-by-ed-murrays-resignation/",
     "image": "teaser03.jpg"
   },
   {
     "order": 4,
-    "category": "Local Politics",
-    "title": "Durkan and Moon strive to showcase their differences in Seattle mayor’s race — and it’s not easy",
-    "link": "https://www.seattletimes.com/seattle-news/politics/durkan-moon-work-to-showcase-differences-in-seattle-mayors-race-and-its-not-easy/",
+    "category": "Policies",
+    "title": "Aid for renters, free transit for kids: Proposals fly in Seattle’s race for mayor",
+    "link": "https://www.seattletimes.com/seattle-news/politics/mayoral-candidates-zero-in-on-policy-proposals/",
     "image": "teaser04.jpg"
   }
 ]

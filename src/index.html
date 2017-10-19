@@ -17,11 +17,12 @@
 
       <h1>Seattle mayoral matchmaker</h1>
       <p class="deck">
-         Wondering which candidate shares your views? Take our quiz!
+         Which candidate shares your views? Take our quiz to find out.
       </p>
 
       <p class="chatter">
-        For each question, pick the position you agree with most – without knowing which candidate each position belongs to. When you’re done, we’ll tell you which candidate thinks like you.
+        For each question, pick the position you agree with most. When you’re done, we’ll tell you which candidate thinks like you.
+      </p>
 
       <div class="results-container"></div>
 
@@ -51,13 +52,6 @@
 
 
         <div class="<%= k %>-bio block hidden">
-<!--           <div class="photo">
-            <img src="http://via.placeholder.com/200x300">
-          </div>
- -->
-<!--         <div class="candidateButton">
-          <img src="./assets/<%= k %>button.jpg">
-        </div> -->
 
         <div class="video">
            <div class="video-container">
@@ -71,7 +65,7 @@
 
 
           <div class="name-bio">
-            <div class="name">
+            <div class="name-<%= k %>">
               <h2><%= bio.name %></h2>
             </div>
             <div class="bio">
@@ -86,15 +80,6 @@
 
     <div class="credits">
       Quiz: Daniel Beekman and Jim Brunner &bull; Editing: Beth Kaiman and Laura Gordon &bull; Project producer: Tyler Sipe &bull; Design: Frank Mina &bull; Illustrations: Gabriel Campanario &bull; Development: Vanessa Mart&iacute;nez and Thomas Wilburn
-
-<!--       <ul>
-        <li>Quiz: Daniel Beekman and Jim Brunner</li>
-        <li>Illustrations: Gabriel Campanario</li>
-        <li>Editing: Beth Kaiman and Laura Gordon</li>
-        <li>Project producer: Tyler Sipe</li>
-        <li>Design: Frank Mina</li>
-        <li>Development: Vanessa Mart&iacute;nez and Thomas Wilburn</li>
-      </ul> -->
     </div>
 
     </main>

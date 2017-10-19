@@ -6,15 +6,15 @@
     },
     "live": {
       "bucket": "projects.seattletimes.com",
-      "path": ""
+      "path": "2017/seattle-mayoral-quiz"
     }
   },
   "title": "Quiz: Seattle mayoral matchmaker",
-  "description": "Wondering which Seattle mayoral candidate shares your views? Take our quiz!",
-  "url": "",
+  "description": "Which Seattle mayoral candidate shares your views? Take our quiz.",
+  "url": "https://projects.seattletimes.com/2017/seattle-mayoral-quiz/",
   "image": "assets/social.jpg",
   "sheets": ["1mknSHLy0JXwaTkTAGTPR9Cf5gI6GsJZJtZdtE82D6tE"],
   "standout": false,
   "embedded": true,
-  "production": false
+  "production": true
 }

@@ -6,60 +6,8 @@
   },
   {
     "question": "Should the city seek new and more progressive taxes?",
-    "durkan": "New and more progressive taxes could help Seattle pay for services. But the city should focus on ideas that don’t need or are more likely to win approval from the Legislature, such as tax breaks for low-income homeowners and for landlords who cap rents.",
-    "moon": "Seattle should push for a statewide capital-gains tax and work to deter real-estate speculation, possibly by taxing non-resident homeownership and vacant properties. Some changes may result in litigation or require Legislative approval, but barriers can be overcome."
-  },
-  {
-    "question": "Does it make sense to give more short-term rent vouchers to homeless people?",
-    "durkan": "Short-term rent vouchers should be one of many approaches. The city's goal should be getting people into homes -- and short-term vouchers, for some, can be the quickest and least expensive answer.",
-    "moon": "Short-term rent vouchers work well for only a limited number of people. The city should move away from relying heavily on short-term vouchers because people with low incomes often become homeless again after their vouchers run out."
-  },
-  {
-    "question": "What do you think about police reform in Seattle?",
-    "durkan": "Important progress has been made in recent years under a federal consent decree. Police officers are using force in fewer cases and the department is more transparent than it was. But the work must continue.",
-    "moon": "Lasting change doesn't happen through a top-down decree. The citizen Community Police Commission should be given direct oversight over the department, rather than an advisory role."
-  },
-  {
-    "question": "What do you think about sweeps, also called cleanups, removals or evictions, of unauthorized homeless encampments?",
-    "durkan": "Most unauthorized encampments are unsafe and unhealthy, and allowing people to live in them is immoral. People shouldn’t be forced to leave, however, without better places to go. The city should add more shelter and housing to give people new choices, and the encampments should be shut down.",
-    "moon": "Sweeps are wrong. Only a small percentage of unauthorized encampments are truly unsafe. In many cases, evicting people disrupts their lives and makes them less safe. When encampments are truly unsafe, the city should offer services with the goal of bringing people to safer places."
-  },
-  {
-    "question": "Should Seattle be allowing taller buildings where developers help create some low-income apartments?",
-    "durkan": "The strategy isn’t perfect but it’s the best tool available to increase the city’s supply of affordable housing immediately.",
-    "moon": "The strategy is a first step. But the city should take time to talk more with communities and consider adding more density in affluent communities than in those experiencing gentrification."
-  },
-  {
-    "question": "Should King County continue building a new juvenile courthouse and detention center in the Central District?",
-    "durkan": "Yes. The county’s existing facility is substandard and some youth, such as those who commit homicide or violent assaults, must continue to be detained. The county should build the new facility for holistic family services while working to further reduce its use of detention.",
-    "moon": "No. The county should stop building the new facility, which devotes too much space to detention. It should re-scope the project and return to the voters with a new proposal. And it should prioritize funding for restorative justice and alternatives to detention."
-  },
-  {
-    "question": "How should the next mayor be bankrolling her campaign?",
-    "durkan": "More than 3,200 contributors, with an average contribution of about $235. Backed by a PAC funded by business groups.",
-    "moon": "More than 600 contributors, with an average contribution of $198. Top contributor is the candidate, donating more than $111,500 to her own campaign."
-  },
-  {
-    "question": "Which endorsements matter to you?",
-    "durkan": "Gov. Jay Inslee, state Attorney General Bob Ferguson, former mayors Ed Murray and Charles Royer, former governors Chris Gregoire and Gary Locke.",
-    "moon": "Former Mayor Mike McGinn, Seattle City Councilmember Mike O'Brien."
-  },
-  {
-    "question": "Do you support allowing apartment buildings to be built in neighborhoods now reserved for single-family houses?",
-    "durkan": "Every part of the city must become denser. But the city shouldn’t take a “one-size-fits-all approach.” More townhomes and mother-in-law apartments may be more appropriate for some neighborhoods.",
-    "moon": "There should be denser housing and a more flexible land-use code in all zones. Seattle has more land allocated to single-family houses than ever before, which is problematic. More townhomes, rowhomes, duplexes and cottages should be built."
-  },
-  {
-    "question": "Should Seattle open more authorized homeless encampments?",
-    "durkan": "Maybe",
-    "moon": "Yes",
-    "yesno": "x"
-  },
-  {
-    "question": "Do you think the city should create a public broadband network?",
-    "durkan": "Maybe",
-    "moon": "Yes",
-    "yesno": "x"
+    "durkan": "The city should focus on ideas that don’t need or are likely to win approval from the Legislature, such as tax breaks for low-income homeowners, for landlords who cap rents and for startup businesses.  ",
+    "moon": "Seattle should push for a statewide capital-gains tax and work to deter real-estate speculation, possibly by taxing non-resident homeownership and vacant properties. The city should tax big businesses more and small businesses less."
   },
   {
     "question": "Should the next mayor keep Kathleen O’Toole as police chief?",
@@ -68,13 +16,65 @@
     "yesno": "x"
   },
   {
+    "question": "What do you think about police reform in Seattle?",
+    "durkan": "Important progress has been made in recent years under a federal consent decree. Police officers are using force in fewer cases and the department is more transparent than it was. But the work must continue.",
+    "moon": "Lasting change doesn't happen through a top-down decree. The citizen Community Police Commission should be given direct oversight over the department, rather than an advisory role."
+  },
+  {
+    "question": "Does it make sense to give more short-term rent vouchers to homeless people?",
+    "durkan": "Short-term rent vouchers should be one of many approaches. The city's goal should be getting people into homes – and short-term vouchers, for some, can be the quickest and least expensive answer.",
+    "moon": "Short-term rent vouchers work well for only a limited number of people. The city should move away from relying heavily on short-term vouchers because people with low incomes often become homeless again after their vouchers run out."
+  },
+  {
+    "question": "What do you think about sweeps, also called cleanups or evictions, of unauthorized homeless encampments?",
+    "durkan": "Most unauthorized encampments are unsafe and unhealthy, and allowing people to live in them is immoral. Before moving people, the city should offer them services and better places to go. The city should add more shelters and housing, and the encampments should be shut down.",
+    "moon": "Sweeps are wrong and should be stopped. Only a small percentage of unauthorized encampments are truly unsafe. In many cases, evicting people disrupts their lives. The city should add more shelters and, when encampments are truly unsafe, help people to safer places."
+  },
+  {
+    "question": "Should Seattle open more authorized homeless encampments?",
+    "durkan": "Maybe",
+    "moon": "Yes",
+    "yesno": "x"
+  },
+  {
+    "question": "Do you support allowing apartments to be built in neighborhoods now reserved for single-family houses?",
+    "durkan": "Every part of the city must become denser. But the city shouldn’t take a “one-size-fits-all approach.” More townhomes, backyard cottages and mother-in-law apartments may be more appropriate for some neighborhoods.",
+    "moon": "There should be denser housing and a more flexible land-use code in all zones. Seattle has more land allocated to single-family houses than ever before, which is problematic. Townhomes, rowhomes, duplexes and cottages should be legalized."
+  },
+  {
+    "question": "Should Seattle be allowing taller buildings where developers help create some low-income apartments?",
+    "durkan": "The strategy isn’t perfect but it’s the best tool available to increase the city’s supply of affordable housing immediately.",
+    "moon": "The strategy is a first step. But the city should take time to talk more with communities and consider adding more density in affluent neighborhoods than in those experiencing gentrification."
+  },
+  {
+    "question": "How should the next mayor be bankrolling her campaign?",
+    "durkan": "3,471 donors, with an average contribution of about $237. Backed by an independent PAC funded by business and labor groups (as of Oct. 18).",
+    "moon": "716 donors, with an average contribution of $191. Top contributor is the candidate, donating more than $141,000 to her own campaign  (as of Oct. 18)."
+  },
+  {
+    "question": "Which endorsements matter to you?",
+    "durkan": "Gov. Jay Inslee, state Attorney General Bob Ferguson, former Mayor Ed Murray, Seattle Metropolitan Chamber of Commerce's political arm, Martin Luther King County Labor Council and more than a dozen union locals.",
+    "moon": "Seattle City Councilmember Mike O'Brien, former Mayor Mike McGinn, Seattle's Sierra Club chapter, Seattle Education Association, UFCW Local 21 supermarket workers and SEIU 925 child-care workers."
+  },
+  {
+    "question": "Do you think the city should create a public broadband network?",
+    "durkan": "Maybe",
+    "moon": "Yes",
+    "yesno": "x"
+  },
+  {
+    "question": "Should King County continue building a new juvenile courthouse and detention center in the Central District?",
+    "durkan": "Yes. The county’s existing facility is substandard and some youth, such as those who commit homicide or violent assaults, must continue to be detained. The county should build the new facility for holistic family services while working to detain fewer young people.",
+    "moon": "No. The county should stop building the new facility, which devotes too much space to detention. It should re-scope the project and return to the voters with a new proposal. And it should prioritize funding for restorative justice and alternatives to detention."
+  },
+  {
+    "question": "Should the city ask voters for approval to further raise property taxes?",
+    "durkan": "Seattle should try to reduce property taxes for older and low-income homeowners but may need to explore a levy to pay for addiction and behavioral-health services.",
+    "moon": "The city should try to raise money through progressive taxes and efficiencies before asking to raise property taxes further."
+  },
+  {
     "question": "Should Seattle offer city money to Sound Transit to help get light rail to Ballard and West Seattle built faster?",
     "durkan": "The problem isn’t money, it’s process. Offering bonding capacity won’t speed up construction and Sound Transit has rejected it. Seattle should focus on cutting the red tape that’s slowing light rail down.",
     "moon": "The city should offer bonding capacity to Sound Transit to help it build faster while also working to speed up planning and permitting."
-  },
-  {
-    "question": "Should Seattle create a municipal bank?",
-    "durkan": "It’s an intriguing idea, and Seattle should pay attention to the results of a study about a state bank. In the meantime, however, the city should focus on more immediate solutions.",
-    "moon": "A city or state bank is an idea worth pursuing because such a bank would work purely in the public interest. Seattle’s mayor should support efforts to make it a reality."
   }
 ]
